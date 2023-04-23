@@ -19,12 +19,13 @@
     
 ### Design Program 
 Program ini memiliki beberapa class, yaitu :
-- Controller, berfungsi untuk mengontrol objek.
-- Display, berfungsi untuk menampilkan objek pada frame
-- Game
-- GameObject
-- Handler
-- Player
+- Controller, berfungsi untuk mengontrol objek dalam game.
+- Display, berfungsi untuk menampilkan objek pada frame.
+- Game, berfungsi untuk mengontrol jalannya game karena terdapat beberapa method seperti method `start()` untuk memulai game, `stop()` untuk menghentikan game, `render()` untuk memuat tampilan game, dan `loop()` untuk menjalankan loop utama pada game.
+- GameObject, merupakan class yang mengimplementasikan interface `GameInterface`.
+- GameInterface, merupakan sebuah `interface` yang memiliki dua method, yaitu `render()` dan `loop()`.
+- Handler, merupakan class yang mengimplementasikan interface `GameInterface`.
+- Player, merupakan subclass dari class `GameObject`.
 - Synchronization, berfungsi untuk me `render` objek dan me `looping` objek.
 
 ### Dokumentasi 
